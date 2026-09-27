@@ -107,6 +107,17 @@ export const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab }) => 
             </div>
             <ExternalLink size={14} className="text-[#807770] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
           </Link>
+
+          <Link
+            href="/lp"
+            className="w-full flex items-center justify-between px-3.5 py-2 rounded-lg text-xs font-medium text-[#807770] hover:bg-[#FBFBF9] hover:text-[#262220] transition-all group"
+          >
+            <div className="flex items-center space-x-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#C49B88]" />
+              <span>Página Institucional &amp; Planos</span>
+            </div>
+            <ExternalLink size={12} className="text-[#807770] group-hover:translate-x-0.5 transition-transform" />
+          </Link>
         </nav>
       </div>
 
