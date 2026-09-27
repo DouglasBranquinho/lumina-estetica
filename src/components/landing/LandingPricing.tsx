@@ -201,6 +201,173 @@ export function LandingPricing() {
           })}
         </div>
 
+        {/* COMPARATIVE FEATURE TABLE */}
+        <div className="mt-20 max-w-5xl mx-auto">
+          <div className="text-center space-y-3 mb-8">
+            <span className="text-xs font-semibold uppercase tracking-wider text-[#C49B88]">
+              Visão Detalhada
+            </span>
+            <h3 className="font-serif text-2xl sm:text-3xl font-semibold text-[#262220]">
+              Compare todos os recursos lado a lado
+            </h3>
+            <p className="text-xs sm:text-sm text-[#544E49]">
+              Entenda exatamente o que está incluso em cada plano para fazer a melhor escolha para o seu momento.
+            </p>
+          </div>
+
+          <div className="overflow-x-auto rounded-3xl border border-[#EAE5DF] bg-[#FFFFFF] shadow-sm">
+            <table className="w-full text-left border-collapse min-w-[620px]">
+              <thead>
+                <tr className="border-b border-[#EAE5DF] bg-[#FAF8F5]">
+                  <th className="py-4 px-6 text-xs font-semibold text-[#807770] uppercase tracking-wider w-2/5">
+                    Funcionalidade
+                  </th>
+                  <th className="py-4 px-4 text-xs font-semibold text-[#262220] text-center w-1/5">
+                    Solo &amp; Estúdio
+                    <span className="block text-[11px] font-normal text-[#807770]">R$ 59/mês</span>
+                  </th>
+                  <th className="py-4 px-4 text-xs font-bold text-[#C49B88] text-center w-1/5 bg-[#FDF9F7] border-x border-[#EAE5DF]">
+                    <div className="inline-flex items-center space-x-1">
+                      <span>Boutique</span>
+                      <Sparkles className="w-3 h-3 text-[#C49B88]" />
+                    </div>
+                    <span className="block text-[11px] font-semibold text-[#262220]">R$ 119/mês</span>
+                  </th>
+                  <th className="py-4 px-4 text-xs font-semibold text-[#262220] text-center w-1/5">
+                    Clinic Prime 👑
+                    <span className="block text-[11px] font-normal text-[#807770]">R$ 199/mês</span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-[#EAE5DF] text-xs">
+                {/* Row 1 */}
+                <tr className="hover:bg-[#FBFBF9] transition-colors">
+                  <td className="py-3.5 px-6 font-medium text-[#262220]">
+                    Profissionais / Especialistas
+                  </td>
+                  <td className="py-3.5 px-4 text-center text-[#544E49] font-medium">1</td>
+                  <td className="py-3.5 px-4 text-center font-bold text-[#262220] bg-[#FDF9F7] border-x border-[#EAE5DF]">
+                    Até 6
+                  </td>
+                  <td className="py-3.5 px-4 text-center font-semibold text-[#3C6547]">Ilimitadas</td>
+                </tr>
+
+                {/* Row 2 */}
+                <tr className="hover:bg-[#FBFBF9] transition-colors">
+                  <td className="py-3.5 px-6 font-medium text-[#262220]">
+                    Link de Agendamento na Bio do Instagram
+                  </td>
+                  <td className="py-3.5 px-4 text-center text-[#3C6547] font-semibold">
+                    <span className="inline-flex items-center space-x-1">
+                      <Check className="w-4 h-4 inline" /> <span>Sim</span>
+                    </span>
+                  </td>
+                  <td className="py-3.5 px-4 text-center text-[#3C6547] font-bold bg-[#FDF9F7] border-x border-[#EAE5DF]">
+                    <span className="inline-flex items-center space-x-1">
+                      <Check className="w-4 h-4 inline" /> <span>Sim</span>
+                    </span>
+                  </td>
+                  <td className="py-3.5 px-4 text-center text-[#3C6547] font-semibold">
+                    <span className="inline-flex items-center space-x-1">
+                      <Check className="w-4 h-4 inline" /> <span>Sim</span>
+                    </span>
+                  </td>
+                </tr>
+
+                {/* Row 3 - The Key Differentiator */}
+                <tr className="hover:bg-[#FBFBF9] transition-colors bg-[#FAF8F5]/30">
+                  <td className="py-3.5 px-6 font-medium text-[#262220]">
+                    Prevenção de Choque de Salas &amp; Lasers
+                    <span className="block text-[10px] text-[#807770]">Trava inteligente de equipamentos caros e cabines</span>
+                  </td>
+                  <td className="py-3.5 px-4 text-center text-[#94434B] font-medium">✕ Não</td>
+                  <td className="py-3.5 px-4 text-center text-[#3C6547] font-bold bg-[#FDF9F7] border-x border-[#EAE5DF]">
+                    <span className="inline-flex items-center px-2 py-0.5 rounded-full bg-[#EDF4EF] text-[#3C6547] text-[10px] font-bold">
+                      ✓ Sim (Exclusivo)
+                    </span>
+                  </td>
+                  <td className="py-3.5 px-4 text-center text-[#3C6547] font-semibold">✓ Sim</td>
+                </tr>
+
+                {/* Row 4 - The Retention Engine */}
+                <tr className="hover:bg-[#FBFBF9] transition-colors bg-[#FAF8F5]/30">
+                  <td className="py-3.5 px-6 font-medium text-[#262220]">
+                    Radar de Retorno WhatsApp (15 a 21 dias)
+                    <span className="block text-[10px] text-[#807770]">Disparo pronto para resgatar manutenção de unhas e cílios</span>
+                  </td>
+                  <td className="py-3.5 px-4 text-center text-[#94434B] font-medium">✕ Não</td>
+                  <td className="py-3.5 px-4 text-center text-[#3C6547] font-bold bg-[#FDF9F7] border-x border-[#EAE5DF]">
+                    <span className="inline-flex items-center px-2 py-0.5 rounded-full bg-[#EDF4EF] text-[#3C6547] text-[10px] font-bold">
+                      ✓ Sim (1 Clique)
+                    </span>
+                  </td>
+                  <td className="py-3.5 px-4 text-center text-[#3C6547] font-semibold">✓ Sim</td>
+                </tr>
+
+                {/* Row 5 */}
+                <tr className="hover:bg-[#FBFBF9] transition-colors">
+                  <td className="py-3.5 px-6 font-medium text-[#262220]">
+                    Fichas Técnicas Lash / Nails / Cabelo
+                  </td>
+                  <td className="py-3.5 px-4 text-center text-[#544E49]">Básica</td>
+                  <td className="py-3.5 px-4 text-center text-[#3C6547] font-bold bg-[#FDF9F7] border-x border-[#EAE5DF]">
+                    ✓ Completa
+                  </td>
+                  <td className="py-3.5 px-4 text-center text-[#3C6547] font-semibold">✓ Completa</td>
+                </tr>
+
+                {/* Row 6 */}
+                <tr className="hover:bg-[#FBFBF9] transition-colors">
+                  <td className="py-3.5 px-6 font-medium text-[#262220]">
+                    Controle de Insumos &amp; Revenda Home Care
+                  </td>
+                  <td className="py-3.5 px-4 text-center text-[#94434B] font-medium">✕ Não</td>
+                  <td className="py-3.5 px-4 text-center text-[#3C6547] font-bold bg-[#FDF9F7] border-x border-[#EAE5DF]">
+                    ✓ Sim
+                  </td>
+                  <td className="py-3.5 px-4 text-center text-[#3C6547] font-semibold">✓ Sim</td>
+                </tr>
+
+                {/* Row 7 */}
+                <tr className="hover:bg-[#FBFBF9] transition-colors">
+                  <td className="py-3.5 px-6 font-medium text-[#262220]">
+                    Multi-Unidades (Múltiplas Filiais)
+                  </td>
+                  <td className="py-3.5 px-4 text-center text-[#94434B] font-medium">✕ Não</td>
+                  <td className="py-3.5 px-4 text-center text-[#94434B] font-medium bg-[#FDF9F7] border-x border-[#EAE5DF]">
+                    ✕ Não
+                  </td>
+                  <td className="py-3.5 px-4 text-center text-[#3C6547] font-bold">✓ Sim</td>
+                </tr>
+
+                {/* Row 8 */}
+                <tr className="hover:bg-[#FBFBF9] transition-colors">
+                  <td className="py-3.5 px-6 font-medium text-[#262220]">
+                    Migração Gratuita de Dados do Sistema Anterior
+                  </td>
+                  <td className="py-3.5 px-4 text-center text-[#94434B] font-medium">✕ Não</td>
+                  <td className="py-3.5 px-4 text-center text-[#94434B] font-medium bg-[#FDF9F7] border-x border-[#EAE5DF]">
+                    ✕ Não
+                  </td>
+                  <td className="py-3.5 px-4 text-center text-[#3C6547] font-bold">✓ Sim</td>
+                </tr>
+
+                {/* Row 9 */}
+                <tr className="hover:bg-[#FBFBF9] transition-colors">
+                  <td className="py-3.5 px-6 font-medium text-[#262220]">
+                    Nível de Suporte
+                  </td>
+                  <td className="py-3.5 px-4 text-center text-[#544E49]">Padrão</td>
+                  <td className="py-3.5 px-4 text-center text-[#262220] font-bold bg-[#FDF9F7] border-x border-[#EAE5DF]">
+                    Prioritário no WhatsApp
+                  </td>
+                  <td className="py-3.5 px-4 text-center text-[#C49B88] font-bold">Gerente de Conta VIP</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
         {/* Risk-free Guarantee Box */}
         <div className="mt-16 max-w-4xl mx-auto rounded-2xl bg-[#FFFFFF] border border-[#EAE5DF] p-6 sm:p-8 shadow-xs flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-6">
           <div className="w-14 h-14 rounded-2xl bg-[#EDF4EF] text-[#3C6547] flex items-center justify-center shrink-0">
